@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-markdown": "^2.4.4"
   },
   "homepage": "./",
   "main": "src/electron-starter.js",
@@ -19,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "dev" : "nf start",
+    "dev": "nf start",
     "electron": "electron ."
   }
 }
