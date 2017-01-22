@@ -4,9 +4,9 @@ import ModeToggle from './ModeToggle'
 
 const Dashboard = (props) => {
   return (
-    <div>
+    <div className='dashboard'>
       <DateInput displayDate={props.displayDate} changeDate={props.changeDate} />
-      <ModeToggle checked={props.checked} changeMode={props.changeMode} />
+      <ModeToggle checked={props.isPreview} changeMode={props.changeMode} />
     </div>
   );
 }

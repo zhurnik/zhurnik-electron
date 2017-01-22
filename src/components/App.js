@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
+import Dashboard from './Dashboard';
+import TextPane from './TextPane'
 import './App.css';
 
 class App extends Component {
   render() {
+    const sampleText='# Hello Zhurnik\n\n Let\'s **be** friends!';
     return (
       <div className="App">
-        <div className="App-header">
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>You will need to remove the unnecessary boilerplate code!</p>
-        <h2>Woohoo!</h2>
+        <Dashboard
+          displayDate='23.01.2017'
+          isPreview={true}
+        />
+        <TextPane
+          textBuffer={sampleText}
+          isPreview={true}
+        />
       </div>
     );
   }
