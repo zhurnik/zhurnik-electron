@@ -2,7 +2,7 @@ import React from 'react';
 
 const DateInput = (props) => {
   return (
-    <form onSubmit= { props.changeDate } >
+    <form onSubmit={ props.changeDate } >
       <input type='text'
              className='date_input'
              value={props.displayDate}
