@@ -5,7 +5,7 @@ const TextInput = (props) => {
     <input
       className='text_input'
       type='textarea'
-      value={props.textBuffer}
+      defaultValue={props.textBuffer}
       onChange={props.changeBuffer}
     />
   );

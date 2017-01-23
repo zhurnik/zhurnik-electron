@@ -5,7 +5,7 @@ const DateInput = (props) => {
     <form onSubmit={ props.changeDate } >
       <input type='text'
              className='date_input'
-             value={props.displayDate}
+             defaultValue={props.displayDate}
       />
       <input type='submit' style={{display: 'none'}} />
     </form>
