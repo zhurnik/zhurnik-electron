@@ -6,15 +6,21 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {isPreview: true};
+    this.state = {
+      isPreview: true,
+      textBuffer: '# Hello Zhurnik\n\n Let\'s **be** friends!'
+    };
   }
 
   changeMode(newMode) {
-    this.setState({isPreview: newMode});
+    this.setState({ isPreview: newMode });
+  }
+
+  changeBuffer(newBuffer) {
+    this.setState({ textBuffer: newBuffer });
   }
 
   render() {
-    const sampleText='# Hello Zhurnik\n\n Let\'s **be** friends!';
     return (
       <div className="App">
         <Dashboard
@@ -23,8 +29,9 @@ class App extends Component {
           changeMode={ (mode) => this.changeMode(mode) }
         />
         <TextPane
-          textBuffer={sampleText}
+          textBuffer={this.state.textBuffer}
           isPreview={this.state.isPreview}
+          changeBuffer={ (buffer) => this.changeBuffer(buffer) }
         />
       </div>
     );
