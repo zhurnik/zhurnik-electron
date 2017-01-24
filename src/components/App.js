@@ -22,7 +22,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <Dashboard
           displayDate='23.01.2017'
           isPreview={this.state.isPreview}
